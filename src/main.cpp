@@ -8,6 +8,8 @@
 
 #if defined(_MSC_VER)
 // Windows:GLEWをスタティックライブラリ形式で利用
+// TIPS:glfw3.h より先に glew.h をインクルードしないと
+//      エラーになります
 #define GLEW_STATIC
 #include <GL/glew.h>
 #endif
